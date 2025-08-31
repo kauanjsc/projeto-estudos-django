@@ -1,47 +1,10 @@
-# Ambiente virtual
-venv/
-.env
-*.env
+-  Projeto de Estudos Django
 
-# Arquivos compilados do Python
-__pycache__/
-*.py[cod]
-*$py.class
+Este é um projeto simples desenvolvido com **Django** para fins de estudo.  
+Aqui vou praticar conceitos como models, views, templates, autenticação e muito mais.
 
-# Banco de dados local
-db.sqlite3
+- Como rodar o projeto
 
-# Logs
-*.log
-
-# Cache e arquivos temporários
-*.pot
-*.pyc
-*.pyo
-*.pyd
-*.so
-*.egg
-*.egg-info/
-dist/
-build/
-.eggs/
-pip-wheel-metadata/
-
-# Migrations (opcional: se não quiser versionar os arquivos de migração)
-# */migrations/
-# !*/migrations/__init__.py
-
-# Configurações do editor/IDE
-.vscode/
-.idea/
-*.swp
-
-# Arquivos de testes/coverage
-.coverage
-.tox/
-.nox/
-.pytest_cache/
-
-# Arquivos do sistema operacional
-.DS_Store
-Thumbs.db
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/kauanjsc/projeto-estudos-django.git
