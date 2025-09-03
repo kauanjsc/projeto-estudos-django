@@ -33,6 +33,8 @@ ALLOWED_HOSTS = ['192.168.3.24', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'grappelli',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,6 +44,8 @@ INSTALLED_APPS = [
 
     'products',
 ]
+
+GRAPPELLI_ADMIN_TITLE = "SGP - Sistema de Gestão de Produtos"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
