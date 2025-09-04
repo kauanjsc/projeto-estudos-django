@@ -33,7 +33,8 @@ ALLOWED_HOSTS = ['192.168.3.24', 'localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'grappelli',
+    #grappelli',
+    'jazzmin', 
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -45,7 +46,7 @@ INSTALLED_APPS = [
     'products',
 ]
 
-GRAPPELLI_ADMIN_TITLE = "SGP - Sistema de Gestão de Produtos"
+#RAPPELLI_ADMIN_TITLE = "SGP - Sistema de Gestão de Produtos"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,3 +130,57 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "SGP - Sistema de Gestão de Produtos",
+    "site_header": "SGP - Sistema de Gestão de Produtos",
+    "site_brand": "SGP",
+    "icons": {
+        "auth.user": "fas fa-user",
+        "auth.group": "fas fa-users",
+        "products.brand": "fas fa-copyright",
+        "products.category": "fas fa-object-group",
+        "products.product": "fas fa-box",
+    },
+    "welcome_sign": "Bem-vindo ao SGP - Sistema de Gestão de Produtos",
+    "copyright": "PycodeBR LTDA",
+
+'search_model': 'products.Product',
+#busca de produtos no admin
+'show_ui_builder': False
+
+
+
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": True,
+    "brand_small_text": False,
+    "brand_colour": False,
+    "accent": "accent-purple",
+    "navbar": "navbar-navy navbar-dark",
+    "no_navbar_border": False,
+    "navbar_fixed": False,
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": False,
+    "sidebar": "sidebar-dark-navy",
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": False,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": False,
+    "theme": "sandstone",
+    "dark_mode_theme": None,
+    "button_classes": {
+        "primary": "btn-outline-primary",
+        "secondary": "btn-outline-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success"
+    }
+}
