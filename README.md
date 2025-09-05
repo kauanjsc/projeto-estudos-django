@@ -1,70 +1,67 @@
--  Projeto de Estudos Django
+# SGP - Sistema de Gestão de Produtos
 
 Este é um projeto simples desenvolvido com **Django** para fins de estudo.  
-Aqui vou praticar conceitos como models, views, templates, autenticação e muito mais.
+O objetivo é praticar conceitos como models, views, templates, autenticação e muito mais.
 
-GP - Sistema de Gestão de Produtos
+## Sobre o Projeto
 
-Esse é um mini projeto feito em Django para treinar e melhorar meus conhecimentos.
-A ideia foi criar um sistema simples para gerenciar produtos, marcas e categorias, usando também o Jazzmin para deixar o painel do admin mais bonito.
+Este mini projeto foi criado para treinar e aprimorar conhecimentos em Django.  
+A ideia é gerenciar produtos, marcas e categorias, utilizando também o Jazzmin para personalizar o painel administrativo.
 
-Funcionalidades
+## Funcionalidades
 
-Cadastro de produtos, marcas e categorias
+- Cadastro de produtos, marcas e categorias
+- Filtros e buscas no admin
+- Exportação de produtos para CSV
+- Painel administrativo customizado com Jazzmin
 
-Filtros e buscas no admin
+## Tecnologias Utilizadas
 
-Exportação de produtos para CSV
+- Python 3.10+
+- Django 5.x
+- SQLite (banco de dados padrão)
+- Jazzmin (tema para Django Admin)
 
-Painel administrativo customizado com Jazzmin
+## Como rodar o projeto
 
-Tecnologias
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/kauanjsc/sgp.git
+   cd sgp
+   ```
 
-Python 3.10+
+2. **Crie o ambiente virtual e ative:**
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate
+   ```
 
-Django 5.x
+3. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-SQLite (banco de dados padrão)
+4. **Rode as migrações e crie o superusuário:**
+   ```bash
+   python manage.py migrate
+   python manage.py createsuperuser
+   ```
 
-Jazzmin (tema para Django Admin)
+5. **Execute o servidor:**
+   ```bash
+   python manage.py runserver
+   ```
 
-Como rodar o projeto
+6. **Acesse o sistema:**
+   - Abra [http://localhost:8000/admin](http://localhost:8000/admin) no navegador para usar o painel administrativo.
 
-Clone o repositório:
+## Estrutura Básica do Projeto
 
-git clone https://github.com/kauanjsc/sgp.git
-cd sgp
-
-
-Crie o ambiente virtual e ative:
-
-python -m venv venv
-venv\Scripts\activate
-
-
-Instale as dependências:
-
-pip install -r requirements.txt
-
-
-Rode as migrações e crie o superusuário:
-
-python manage.py migrate
-python manage.py createsuperuser
-
-
-Execute o servidor:
-
-python manage.py runserver
-
-
-Depois é só acessar http://localhost:8000/admin
- para usar o sistema.
-
- Estrutura básica
+```
 SGP/
 ├── core/        # Configurações principais
 ├── products/    # App de produtos, marcas e categorias
 ├── templates/   # Templates HTML
 ├── manage.py
 └── requirements.txt
+```
